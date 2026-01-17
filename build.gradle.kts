@@ -11,7 +11,7 @@ java {
 }
 
 allprojects {
-    group = "com.instancify.scriptify.ts"
+    group = "org.densy.scriptify.ts"
     version = "1.0.0-SNAPSHOT"
 }
 
@@ -23,7 +23,7 @@ subprojects {
 
     repositories {
         mavenCentral()
-        maven("https://repo.instancify.app/snapshots")
+        maven("https://repo.densy.org/snapshots")
     }
 
     publishing {
@@ -37,8 +37,8 @@ subprojects {
         }
         repositories {
             maven {
-                name = "instancify"
-                url = uri("https://repo.instancify.app/snapshots")
+                name = "densy"
+                url = uri("https://repo.densy.org/snapshots")
                 credentials {
                     username = System.getenv("MAVEN_USERNAME")
                     password = System.getenv("MAVEN_PASSWORD")

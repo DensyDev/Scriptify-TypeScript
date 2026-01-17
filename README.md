@@ -1,5 +1,5 @@
 # Scriptify TypeScript
-Adds TypeScript support to Scriptify. Uses ready-made implementations of [script-js-graalvm](https://github.com/Instancify/Scriptify/tree/master/script-js-graalvm) and [script-js-rhino](https://github.com/Instancify/Scriptify/tree/master/script-js-rhino), and transcompiles TypeScript using [swc4j](https://github.com/caoccao/swc4j) for evaluation.
+Adds TypeScript support to Scriptify. Uses ready-made implementations of [script-js-graalvm](https://github.com/DensyDev/Scriptify/tree/master/script-js-graalvm) and [script-js-rhino](https://github.com/DensyDev/Scriptify/tree/master/script-js-rhino), and transcompiles TypeScript using [swc4j](https://github.com/caoccao/swc4j) for evaluation.
 
 ## TAKE NOTE
 > [!WARNING]
@@ -20,12 +20,12 @@ List of all dependencies:
 **https://github.com/caoccao/swc4j?tab=readme-ov-file#dependency**
 
 ## Maven
-Adding repo:
+Adding repository:
 ```xml
 <repositories>
     <repository>
-        <id>instancify-repository-snapshots</id>
-        <url>https://repo.instancify.app/snapshots</url>
+        <id>densy-repository-snapshots</id>
+        <url>https://repo.densy.org/snapshots</url>
     </repository>
 </repositories>
 ```
@@ -33,7 +33,7 @@ Adding repo:
 For adding a library for GraalVM (SWC):
 ```xml
 <dependency>
-    <groupId>com.instancify.scriptify.ts</groupId>
+    <groupId>org.densy.scriptify.ts</groupId>
     <artifactId>script-ts-swc-graalvm</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 </dependency>
@@ -42,27 +42,27 @@ For adding a library for GraalVM (SWC):
 For adding a library for Rhino (SWC):
 ```xml
 <dependency>
-    <groupId>com.instancify.scriptify.ts</groupId>
+    <groupId>org.densy.scriptify.ts</groupId>
     <artifactId>script-ts-swc-rhino</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 </dependency>
 ```
 
 ## Gradle
-Adding repo:
+Adding repository:
 ```groovy
 maven {
-    name "instancifyRepositorySnapshots"
-    url "https://repo.instancify.app/snapshots"
+    name "densyRepositorySnapshots"
+    url "https://repo.densy.org/snapshots"
 }
 ```
 
 For adding a library for GraalVM (SWC):
 ```groovy
-implementation "com.instancify.scriptify.ts:script-ts-swc-graalvm:1.0.0-SNAPSHOT"
+implementation "org.densy.scriptify.ts:script-ts-swc-graalvm:1.0.0-SNAPSHOT"
 ```
 
 For adding a library for Rhino (SWC):
 ```groovy
-implementation "com.instancify.scriptify.ts:script-ts-swc-rhino:1.0.0-SNAPSHOT"
+implementation "org.densy.scriptify.ts:script-ts-swc-rhino:1.0.0-SNAPSHOT"
 ```

@@ -7,6 +7,6 @@ repositories {
 }
 
 dependencies {
-    api("com.instancify.scriptify:script-js-graalvm:1.4.4-SNAPSHOT")
+    api("org.densy.scriptify:script-js-graalvm:1.5.0-SNAPSHOT")
     api("com.caoccao.javet:swc4j:1.6.0")
 }
